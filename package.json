@@ -5,7 +5,7 @@
   "description": "Midsomer Murder Plot generator",
   "main": "index.js",
   "scripts": {
-    "test": "eslint ."
+    "test": "mocha && eslint ."
   },
   "repository": {
     "type": "git",
@@ -18,5 +18,10 @@
   "homepage": "https://github.com/matthewberryman/midsomerplots-content",
   "dependencies": {
     "mersenne-twister": "^1.1.0"
+  },
+  "devDependencies": {
+    "eslint": "^5.7.0",
+    "chai": "^4.2.0",
+    "mocha": "^5.2.0"
   }
 }
