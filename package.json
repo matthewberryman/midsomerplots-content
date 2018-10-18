@@ -1,0 +1,22 @@
+{
+  "name": "midsomermurderplots",
+  "version": "2.3.0",
+  "license": "GPL-3.0",
+  "description": "Midsomer Murder Plot generator",
+  "main": "index.js",
+  "scripts": {
+    "test": "eslint ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matthewberryman/midsomerplots-content.git"
+  },
+  "author": "Matthew Berryman",
+  "bugs": {
+    "url": "https://github.com/matthewberryman/midsomerplots-content/issues"
+  },
+  "homepage": "https://github.com/matthewberryman/midsomerplots-content",
+  "dependencies": {
+    "mersenne-twister": "^1.1.0"
+  }
+}
