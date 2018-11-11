@@ -1,0 +1,17 @@
+
+service: midsomerplots-content
+
+provider:
+  name: aws
+  runtime: nodejs8.10
+  stage: prod
+  region: us-east-1
+
+functions:
+  getPlot:
+    handler: index.handler
+    events:
+      - http:
+          path: plot
+          cors: true
+          method: get
