@@ -13,7 +13,7 @@ midsomerplots.generate(Math.round((new Date()).getTime()/1000));
 # Web API
 
 ```shell
-curl "https://midsomerplots.acrossthecloud.net/?seed=n"
+curl "https://midsomerplots.acrossthecloud.net/plot?seed=n"
 ```
 for some integer n (if ommitted, will default to current Unix time in seconds)
 
