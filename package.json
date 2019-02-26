@@ -20,8 +20,8 @@
     "mersenne-twister": "^1.1.0"
   },
   "devDependencies": {
-    "eslint": "^5.13.0",
+    "eslint": "^5.14.1",
     "chai": "^4.2.0",
-    "mocha": "^5.2.0"
+    "mocha": "^6.0.2"
   }
 }
