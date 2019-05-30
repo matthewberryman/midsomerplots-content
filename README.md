@@ -1,5 +1,5 @@
 # MidsomerPlots content
-This is a Midsomer Murders plot generator, available as a Node.js package and as an open web API
+This is a Midsomer Murders plot generator, available as a Node.js package and as an open web API, as used in the [@midsomerplots](https://twitter.com/midsomerplots) Twitter bot ([code](https://github.com/matthewberryman/midsomerplots)) and [Alexa skill](https://www.amazon.com/Across-the-Cloud-Pty-Ltd/dp/B07K87CPPQ) ([code](https://github.com/matthewberryman/midsomerplots-Alexa))
 
 # Use as a Node.js module:
 
