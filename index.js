@@ -1,5 +1,7 @@
+#!/usr/bin/env node
 const MersenneTwister = require('mersenne-twister');
 const plot_elements = require('./plot-elements.json');
+const wrap = require('word-wrap');
 
 module.exports.generate = (seed) => {
 
@@ -40,3 +42,9 @@ module.exports.handler = (event, context, callback) => {
 
   callback(null, response);
 };
+
+
+
+module.exports.handler({}, null, (a, response) => {
+  console.log(wrap(JSON.parse(response.body).plot, {width: process.stdout.columns-1, indent: ''}));
+});
