@@ -11,6 +11,7 @@ module.exports.generate = (seed) => {
                Math.floor( mt.random() * plot_elements.cause_of_death.length),
                Math.floor( mt.random() * plot_elements.village.length),
                Math.floor( mt.random() * plot_elements.village_group.length),
+               Math.floor( mt.random() * plot_elements.feeling.length),
                Math.floor( mt.random() * plot_elements.angry_at.length),
                Math.floor( mt.random() * plot_elements.threatened.length)];
 
@@ -18,7 +19,8 @@ module.exports.generate = (seed) => {
          " is found " + plot_elements.cause_of_death[rands[1]] +
          ". Suspicion falls on " + (plot_elements.village[rands[2]] +
          "’s ").replace("s’s","s’") + plot_elements.village_group[rands[3]] +
-         ", angry that " + plot_elements.angry_at[rands[4]] +
+         ", " + plot_elements.feeling[rands[4]] + 
+         " that " + plot_elements.angry_at[rands[4]] +
          " might threaten " + plot_elements.threatened[rands[5]]+".";
 };
 

@@ -7,7 +7,9 @@
     "A one-armed hot tar roofer",
     "A big cucumber fan",
     "A home baker",
-    "An unhygienic soap maker",    
+    "An unhygienic soap maker",
+    "An undecided quantum information theorist",   
+    "A former Dr Who actor", 
     "An ambidextrous percussionist",
     "A despotic archaeologist",
     "An empathic microbiologist",
@@ -746,7 +748,12 @@
     "Pandlefoot Bailey",
     "Shotover & Forest hill",
     "Upper Warden",
-    "Whitcombe Mallet"
+    "Whitcombe Mallet",
+    "Lower Twatt",
+    "Many Crooks",
+    "Bight of Spam",
+    "Little Ox Eye",
+    "Drooping Point"
   ],
   "village_group": [
     "medieval reenactment society",
@@ -901,6 +908,12 @@
     "suspicious out-of-towners",
     "society of Venus watchers",
     "short-wave radio club"
+  ],
+  "feeling": [
+    "angry",
+    "deeply concerned",
+    "worried",
+    "frightened"
   ],
   "angry_at" : [
     "massive union mobilisation",
