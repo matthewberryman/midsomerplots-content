@@ -20,8 +20,8 @@ module.exports.generate = (seed) => {
          ". Suspicion falls on " + (plot_elements.village[rands[2]] +
          "’s ").replace("s’s","s’") + plot_elements.village_group[rands[3]] +
          ", " + plot_elements.feeling[rands[4]] + 
-         " that " + plot_elements.angry_at[rands[4]] +
-         " might threaten " + plot_elements.threatened[rands[5]]+".";
+         " that " + plot_elements.angry_at[rands[5]] +
+         " might threaten " + plot_elements.threatened[rands[6]]+".";
 };
 
 const headers = {
