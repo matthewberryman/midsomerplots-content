@@ -15,12 +15,12 @@ module.exports.generate = (seed) => {
                Math.floor( mt.random() * plot_elements.angry_at.length),
                Math.floor( mt.random() * plot_elements.threatened.length)];
 
-  return plot_elements.murdered_person[rands[0]] +
+  return plot_elements.murdered_person[0] +
          " is found " + plot_elements.cause_of_death[rands[1]] +
          ". Suspicion falls on " + (plot_elements.village[rands[2]] +
          "’s ").replace("s’s","s’") + plot_elements.village_group[rands[3]] +
          ", " + plot_elements.feeling[rands[4]] + 
-         " that " + plot_elements.angry_at[rands[5]] +
+         " that " + plot_elements.angry_at[0] +
          " might threaten " + plot_elements.threatened[rands[6]]+".";
 };
 
