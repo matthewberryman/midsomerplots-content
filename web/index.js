@@ -9,7 +9,7 @@ $( document ).ready(function() {
     });
   } else {
     $.getJSON( "https://midsomerplots.acrossthecloud.net/plot", function( data ) {
-      location.hash=data.seed
+      location.hash=data.seed;
       $( "#plot" ).html( data.plot );
     });
   }
@@ -19,6 +19,8 @@ $( document ).ready(function() {
   $("#newPlot").click(function() {
     $.getJSON( "https://midsomerplots.acrossthecloud.net/plot", function( data ) {
       $( "#plot" ).html( data.plot );
+      location.hash=data.seed;
+      $("share").text("Share");
     });
   });
 
@@ -30,6 +32,10 @@ $( document ).ready(function() {
     document.execCommand("copy");
     temp.remove();
     $("#share").text("URL copied!");
+    setTimeout(function() {
+      $("#share").text("Share");
+    }, 2000);
+
   });
 
 });
