@@ -39,7 +39,7 @@ module.exports.handler = (event, context, callback) => {
   const response = {
     statusCode: 200,
     headers: headers,
-    body: JSON.stringify({plot: module.exports.generate(seed)})
+    body: JSON.stringify({plot: module.exports.generate(seed), seed: seed})
   };
 
   callback(null, response);

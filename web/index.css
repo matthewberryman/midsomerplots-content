@@ -104,6 +104,9 @@ body {
   }
 }
 
+.col-xs-6 {
+  padding: 5px;
+}
 
 /*
  * Cover
