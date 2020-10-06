@@ -53,12 +53,13 @@ module.exports.handler = (event, context, callback) => {
   
     callback(null, response);
 
+    }
   }
 
   // otherwise, use a random seed
   let seed = Math.round((new Date()).getTime()/1000);
   let plot = module.exports.generate(seed);
-  if (event.queryStringParameters.characterLimit) {
+  if (event.queryStringParameters && event.queryStringParameters.characterLimit) {
     // generate a plot that is <= characterLimit
     while (plot.length > event.queryStringParameters.characterLimit) { 
       seed = Math.round((new Date()).getTime()/1000);
