@@ -9,6 +9,8 @@ provider:
 
 functions:
   getPlot:
+    timeout: 30
+    memorySize: 2048
     handler: index.handler
     events:
       - http:
