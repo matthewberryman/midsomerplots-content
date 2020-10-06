@@ -30,16 +30,45 @@ const headers = {
 };
 
 module.exports.handler = (event, context, callback) => {
-  let seed = 0;
+  
   if (event.queryStringParameters && event.queryStringParameters.seed) {
-    seed = parseInt(event.queryStringParameters.seed);
-  } else {
-    seed = Math.round((new Date()).getTime()/1000);
+    if (event.queryStringParameters.characterLimit) {
+
+      const response = {
+        statusCode: 400,
+        headers: headers,
+        body: JSON.stringify({"error": "not allowed to specify both seed and characterLimit"})
+      };
+    
+      callback(null, response);
+   
+    } else {
+
+    const seed = parseInt(event.queryStringParameters.seed);
+    const response = {
+      statusCode: 200,
+      headers: headers,
+      body: JSON.stringify({plot: module.exports.generate(seed), seed: seed})
+    };
+  
+    callback(null, response);
+
+  }
+
+  // otherwise, use a random seed
+  let seed = Math.round((new Date()).getTime()/1000);
+  let plot = module.exports.generate(seed);
+  if (event.queryStringParameters.characterLimit) {
+    // generate a plot that is <= characterLimit
+    while (plot.length > event.queryStringParameters.characterLimit) { 
+      seed = Math.round((new Date()).getTime()/1000);
+      plot = module.exports.generate(seed);
+    }
   }
   const response = {
     statusCode: 200,
     headers: headers,
-    body: JSON.stringify({plot: module.exports.generate(seed), seed: seed})
+    body: JSON.stringify({plot: plot, seed: seed})
   };
 
   callback(null, response);
