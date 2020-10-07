@@ -15,13 +15,18 @@ midsomerplots.generate(Math.round((new Date()).getTime()/1000));
 ```shell
 curl "https://midsomerplots.acrossthecloud.net/plot?seed=n"
 ```
-for some integer n (if ommitted, will default to current Unix time in seconds)
+for some 32-bit integer n (if ommitted, will default to current Unix time in seconds)
 
-Example esponse:
+Example response:
 ```json
 {
-    "plot": "An underappreciated archivist is found quilted to death. Suspicion falls on Midsomer Magna’s New Age commune, angry that massive union mobilisation might threaten to force the local diamond mine to close."
+  "plot": "A misunderstood Scottish flight attendant is found killed in a model village and tied down like Gulliver in Lilliput. Suspicion falls on Upton Snodsbury’s real ale appreciation society, confused that the local date night might threaten to reveal that due to an off-by-one error, the meaning of life is actually 43.",
+  "seed": 13
 }
 ```
-
+Alternatively, a maximum character limit may be passed:
+```shell
+curl "https://midsomerplots.acrossthecloud.net/plot?characterLimit=200"
+```
+Note that this is incompatible with the seed querystring parameter, and for low numbers introduces a delay or even the possibility of a timeout (after 30s) while it finds a short enough plot at random.
 
