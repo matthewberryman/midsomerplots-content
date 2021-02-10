@@ -1,9 +1,13 @@
 #!/usr/bin/env node
 const MersenneTwister = require('mersenne-twister');
-const plot_elements = require('./plot-elements.json');
+let plot_elements = require('./plot-elements.json');
 const wrap = require('word-wrap');
 
 module.exports.generate = (seed) => {
+
+  if (seed < 1612917829) {
+    plot_elements = require('./plot-elements-old.json');
+  }
 
   let mt = new MersenneTwister(seed);
 
