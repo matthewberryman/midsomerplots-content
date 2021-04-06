@@ -1,6 +1,11 @@
 {
   "murdered_person": [
+    "A person who has conversations between their Twitter alts",
+    "A failed TV writer turned transphobe",
     "A polyamorous tantric sex guru",
+    "An author of gothic fiction",
+    "A former Prime Minister",
+    "A so-called comedian who thinks blackface was once funny and acceptable",
     "A self-described “fair and balanced citizen”",
     "A former male porn star who's fallen on hard times",
     "The local artist, who lives a secret life as a Twitter troll,",
@@ -243,6 +248,11 @@
     "A local computer programmer"
   ],
   "cause_of_death": [
+    "hung from a bridge over troubled water",
+    "21 grams lighter",
+    "eviscerated with a bronze-age sword",
+    "burnt at the stake",
+    "cooked in the glasshouse",
     "dead, after a Gwyneth-Paltrow-vagina-scented candle exploded",
     "dead following a heated parish council meeting",
     "with the pear of anguish still buried in the body",
@@ -550,7 +560,6 @@
     "diced up by a sword bought on eBay (that came with a money back guarantee)",
     "stabbed with a sharpened anal speculum drunkenly purchased on Wish",
     "tied up, salted, then licked to death by a hyponatraemic cow",
-    "as part of a giant fatberg in the sewers of Midsomer",
     "dead at the back of the hop on hop off tour bus during the weekly cleaning",
     "as an exquisitely scented candle made from human tallow",
     "bludgeoned with a candlestick",
@@ -1001,6 +1010,7 @@
     "frightened"
   ],
   "angry_at" : [
+    "Midsomer Murders plots actually written by this bot",
     "the closure of the local cake shop",
     "the old cairn",
     "a new pandemic",
@@ -1171,6 +1181,7 @@
     "a planned biography of a deceased local identity"
   ],
   "threatened": [
+    "to reveal that every edition of Köchel’s catalogue is badly wrong",
     "the production of gay porn",
     "the decoration of bespoke bridal cakes",
     "realistic prospects of avoiding human-society-ending climate change",
