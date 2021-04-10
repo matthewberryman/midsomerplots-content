@@ -8,6 +8,9 @@ module.exports.generate = (seed) => {
   if (seed < 1612917829) {
     plot_elements = require('./plot-elements-old.json');
   }
+  if ((seed >= 1612917829) && (seed < 1618091960)) {
+    plot_elements = require('./plot-elements-old2.json');
+  }
 
   let mt = new MersenneTwister(seed);
 
