@@ -1,5 +1,7 @@
 {
   "murdered_person": [
+    "A lockdown protestor",
+    "An overpaid HM Revenue & Customs worker",
     "A phrenologist with craniosynostosis",
     "A person who has conversations with their Twitter alts",
     "A failed TV writer turned transphobe",
@@ -249,6 +251,10 @@
     "A local computer programmer"
   ],
   "cause_of_death": [
+    "dead from a 15,000 year old virus extracted from a melting glacier",
+    "with the brain tissue vitrified",
+    "with the only remains being a finger in jar of formaldehyde",
+    "fried on a high voltage electricity pylon",
     "dead with the hair, urine, and a tooth placed in a buried witch bottle",
     "turned into a nice pair of human-skin trousers",
     "drowned in a computer-controlled toilet",
@@ -840,6 +846,10 @@
     "Drooping Point"
   ],
   "village_group": [
+    "pencil sharpening society",
+    "Japanese translation class",
+    "black-swan-wrangling club",
+    "newt taxidermy club",
     "spotted dick baker’s society",
     "ordinand",
     "poached eggs society",
@@ -1017,6 +1027,7 @@
     "frightened"
   ],
   "angry_at" : [
+    "white supremacists",
     "bad takes by Quillette",
     "sea level rise",
     "Midsomer Murders plots actually written by this bot",
@@ -1190,6 +1201,7 @@
     "a planned biography of a deceased local identity"
   ],
   "threatened": [
+    "urgent climate change action",
     "to interrupt a performance of John Cage's 4'33\"",
     "a Pisky invasion of Anglo-Saxon lands",
     "to reveal that every edition of Köchel’s catalogue is badly wrong",
