@@ -3,7 +3,8 @@ service: midsomerplots-content
 
 provider:
   name: aws
-  runtime: nodejs12.x
+  runtime: nodejs14.x
+  architecture: arm64
   stage: prod
   region: us-east-1
 
