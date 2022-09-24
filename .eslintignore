@@ -1,2 +1,3 @@
 test/
 docker-npm.js
+web/index.js
