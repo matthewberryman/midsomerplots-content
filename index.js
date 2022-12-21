@@ -11,10 +11,13 @@ module.exports.generate = (seed) => {
   if ((seed >= 1612917829) && (seed < 1618091960)) {
     plot_elements = require('./plot-elements-old2.json');
   }
-  if ((seed >= 1618091960 && seed < 1653717696)) {
+  if ((seed >= 1618091960) && (seed < 1653717696)) {
     plot_elements = require('./plot-elements-old3.json');
   }
-
+  if ((seed >= 1653717696) && seed < (1671665804)) {
+    plot_elements = require('./plot-elements-old4.json');
+  } 
+ 
   let mt = new MersenneTwister(seed);
 
   var rands = [Math.floor( mt.random() * plot_elements.murdered_person.length),
