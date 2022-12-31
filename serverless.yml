@@ -1,6 +1,9 @@
 
 service: midsomerplots-content
 
+plugins:
+  - serverless-prune-plugin
+
 provider:
   name: aws
   runtime: nodejs16.x
@@ -18,3 +21,9 @@ functions:
           path: plot
           cors: true
           method: get
+
+custom:
+  prune:
+    automatic: true
+    includeLayers: true
+    number: 3
