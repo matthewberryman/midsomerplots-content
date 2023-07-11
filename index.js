@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 const MersenneTwister = require('mersenne-twister');
 let plot_elements = require('./plot-elements.json');
-const wrap = require('word-wrap');
+const wrap = require('@aashutoshrathi/word-wrap');
 
 module.exports.generate = (seed) => {
 

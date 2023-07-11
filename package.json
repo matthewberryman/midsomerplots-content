@@ -21,7 +21,7 @@
   "homepage": "https://github.com/matthewberryman/midsomerplots-content",
   "dependencies": {
     "mersenne-twister": "^1.1.0",
-    "word-wrap": "^1.2.3"
+    "word-wrap": "@aashutoshrathi/word-wrap:^1.2.6"
   },
   "devDependencies": {
     "chai": "^4.3.7",
