@@ -62,3 +62,6 @@ typings/
 
 # serverless
 .serverless/
+
+# macOS metadata
+.DS_Store
