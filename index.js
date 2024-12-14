@@ -5,6 +5,7 @@ const wrap = require('@aashutoshrathi/word-wrap');
 
 module.exports.generate = (seed) => {
 
+
   if (seed < 1612917829) {
     plot_elements = require('./plot-elements-old.json');
   }
@@ -22,6 +23,9 @@ module.exports.generate = (seed) => {
   }
   if ((seed >= 1672118328) && seed < (1675071437)) {
     plot_elements = require('./plot-elements-old5.json');
+  }
+  if ((seed >= 1675071437) && seed < (1734154664)) {
+    plot_elements = require('./plot-elements-old6.json');
   }
   
   let mt = new MersenneTwister(seed);
