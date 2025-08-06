@@ -26,6 +26,6 @@
     "chai": "^5.1.2",
     "eslint": "^9.17.0",
     "mocha": "^11.0.1",
-    "serverless": "3.39.0"
+    "serverless": "4.17.2"
   }
 }
