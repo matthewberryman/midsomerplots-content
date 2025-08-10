@@ -13,7 +13,7 @@ provider:
 
 functions:
   getPlot:
-    timeout: 30
+    timeout: 29
     memorySize: 2048
     handler: index.handler
     events:
